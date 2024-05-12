@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">文字認識アプリ</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="start">Start</string>
+    <string name="back">メインに戻る</string>
+
+    <string name="lorem_ipsum">
+        画像を設定してStartを押して下さい
+    </string>
+    <string name="info">本アプリ（以下、「本アプリ」といいます。）をご利用いただきありがとうございます。\n本アプリは、画像内の文字を認識し、テキスト形式での出力を提供することを目的としています。しかし、以下の点につきまして、あらかじめご了承ください。\n
+
+精度について\n
+本アプリは、機械学習技術を用いて画像から文字を認証しますが、認識精度は100%ではありません。画像の品質、照明の条件、文字のフォントやサイズなどにより、誤認識や読み取り不能が発生する可能性があります。認証結果には十分注意し、最終的な判断は利用者の責任において行ってください。\n
+
+利用範囲について\n
+
+本アプリの使用は、個人的な目的に限定されます。商用利用、または権利を侵害する可能性のある行為には使用しないでください。本アプリを使用して生じたいかなる損害についても、開発者は責任を負いません。\n
+免責事項\n
+
+開発者は、本アプリの使用から生じる直接的、間接的な損害（データの損失、業務の中断、経済的損失等）について、いかなる責任も負いません。また、本アプリの動作保証、サポートの提供を義務付けるものではありません。\n
+利用者は、本アプリのダウンロードおよび使用により、本問責事項に同意したものとみなします。本問責事項の内容は、予告なく変更されることがありますので、定期的に確認してください</string>
+    <string name="setspace">ここをタップして画像を選択してください</string>
+</resources>

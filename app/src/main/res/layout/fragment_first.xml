@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <ImageView
+            android:id="@+id/imageViewOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="#F3C3C3"
+            android:contentDescription="Original Image"
+            android:text="Selected image will be displayed here" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Image"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnProcessImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Process Image"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="151dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/aboutprocess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前処理に含める項目"
+                    android:textSize="10sp" />
+
+                <Switch
+                    android:id="@+id/switchGrayscale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="グレースケール変換" />
+
+                <Switch
+                    android:id="@+id/switchBinarization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="二値化" />
+
+                <Switch
+                    android:id="@+id/switchDenoise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="ノイズ除去" />
+
+                <TextView
+                    android:id="@+id/textViewPath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="3sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="198dp"
+                android:layout_height="151dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/processed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前処理後画像"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:id="@+id/preprocess"
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#F3C3C3"
+                    android:contentDescription="Original Image"
+                    android:text="Selected image will be displayed here" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
+
+            <TextView
+                android:id="@+id/result_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="画像を選択して実行すると画像内の文字を読みとります"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
